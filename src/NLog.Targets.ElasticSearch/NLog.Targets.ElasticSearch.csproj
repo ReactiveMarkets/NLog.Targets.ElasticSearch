@@ -1,5 +1,4 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
     <Description>An NLog target that utilises the elasticsearch low level client.</Description>
@@ -14,12 +13,11 @@
     <AssemblyOriginatorKeyFile>NLog.Targets.ElasticSearch.snk</AssemblyOriginatorKeyFile>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="Elasticsearch.Net" Version="7.4.2" />
+    <PackageReference Include="Elasticsearch.Net" Version="7.13.2" />
+    <PackageReference Include="NEST" Version="7.13.2" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="NLog" Version="4.6.8" />
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All"/>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
   </ItemGroup>
-
 </Project>
